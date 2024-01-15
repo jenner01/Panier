@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pan_2.css">
+    <title>Panier</title>
+    <!-- lien des icone -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!-- le header -->
+    <header>
+        <!-- le navbar -->
+         <nav>
+            <div class="nav contener">
+                <a href="#" class="logo">Fromcasa</a>
+                <!-- cart icon -->
+                 <!-- <box-icon name='cart-alt' id="cart-icon"></box-icon> -->
+                <i class='bx bx-shopping-bag' id="cart-icon">Voir Votre Panier</i>
+            </div>
+        </nav>
+    </header>
+    <!-- sectio Panier -->
+    
+        
+    
+    <!-- section des produits -->
+    <section class="shop contener">
+        <h2 class="section-title"><b><u>Produits Casamance</u></b> </h2>
+
+        <div class="shop-content">
+            <!-- boite1  -->
+            <div class="product-box">
+                <img src="miel.jpg" alt="" class="product-img">
+                <h2 class="product-title">Du miel</h2>
+                <span class="prix">4000Fcfa/L</span>
+                <i class='bx bxs-heart  coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+        
+            <!-- boite2  -->
+            <div class="product-box">
+                <img src="made.jpg" alt="" class="product-img">
+                <h2 class="product-title">Du made</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <!-- boite3  -->
+            <div class="product-box">
+            <img src="todj.jpg" alt="" class="product-img">
+                <h2 class="product-title">Made</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box">
+                <img src="sole.jpg" alt="" class="product-img">
+                <h2 class="product-title">Sole</h2>
+                <span class="prix">1500Fcfa/kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+        
+            <div class="product-box">
+                <img src="bouteille_un_quart.jpg" alt="" class="product-img">
+                <h2 class="product-title">Miel</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            
+            <div class="product-box">
+                <img src="huile.jpg" alt="" class="product-img">
+                <h2 class="product-title">Huile de palme</h2>
+                <span class="prix">2000Fcfa/L</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- le Panier -->
+    <div class="cart">
+        <h2 class="cart-title">votre Panier</h2>
+        <!-- contener -->
+        <div class="cart-content">
+
+    
+        </div>
+        <!-- Total -->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-prix">0Fcfa</div>
+        </div>
+        <!-- bouton d'achat -->
+        <button type="button" class="bnt-bay">Achetez Maintenant</button>
+        <!-- cart pour fermer -->
+        <i class="bx bx-x" id="close-cart"></i>
+    </div>
+    <!-- linen du javascript -->
+    <script src="pan.js"></script>
+</body>
+</html>

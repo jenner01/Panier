@@ -1,0 +1,245 @@
+img {
+    width: 100%;
+    height: 200px;
+}
+body{
+    background-color: green;
+    display: flex;
+}
+    
+
+/* header */
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(216, 209, 209);
+    box-shadow: 0 1px 4px hsl(0, 4%, 15%/10%);
+    position: fixed;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.contener {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+
+
+}
+
+.logo {
+    font-size: 36px;
+    color: green;
+    text-decoration: none;
+}
+#coeur{
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+#cart-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: orange;
+}
+
+section {
+    padding: 2px 0 3rem;
+}
+
+.shop {
+    margin-top: 2rem;
+
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* achat */
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+
+.product-box {
+    position: relative;
+} 
+
+.product-box:hover {
+    padding: 10px;
+    border: 1px solid;
+    transition: 0, 4s;
+}
+
+.product-img {
+    width: 100%;
+
+    margin-bottom: 0.5rem;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.prix {
+    font-weight: 500;
+}
+
+.cart {
+    position: fixed;
+    top: 40px;
+    right: -100%;
+    width: 300px;
+    min-width: 50vh;
+    padding: 20px;
+    background: rgb(114, 223, 114);
+    box-shadow: -2px 0 4px hsl(0, 4%, 15%/10%);
+    transition: 0.3s;
+    max-height: 450px; /* Ajustez la hauteur maximale selon vos besoins */
+    overflow-y: auto;
+    
+}
+.cart.active{
+    right: 0;
+}
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color:rgb(226, 103, 103);
+    cursor: pointer;
+}
+.quantity-btn{
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid;
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+b{
+    color: yellow;
+    font-size: 30px;
+}
+.total-prix {
+    margin-left: 0.5rem;
+}
+.bnt-bay{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.bnt-bay:hover{
+    background-color: aqua;
+}
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color:rgb(226, 103, 103) ;
+    cursor: pointer;
+}
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.daitail-box {
+    display: grid;
+    row-gap: 1.5rem;
+
+}
+
+.cart-produit-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+
+.cart-prix {
+    font-weight: 500px;
+}
+
+.cart-quantity {
+    border: 1px solid;
+    outline-color: orange;
+    text-align: center;
+    width: 50px;
+    font-size: 1rem;
+
+}
+.coeur{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    color: red;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: orange;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.add-cart:hover {
+    background: hsl(209, 32%, 17%)
+}
